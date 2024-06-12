@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Page!</title>
+    <style>
+
+
+body{
+    background-color: rgb(103, 57, 209);
+}
+
+            #heading1{
+                background-color: green;
+                color: yellow;
+                text-align: center;
+                font-size: 1.5cm;
+            }
+            #under-heading{
+                text-align: center;
+                color: red;
+                font-size: 0.6cm;
+            }
+
+            #first-button { 
+                background-color: #c2fbd7; 
+                border-radius: 100px; 
+                box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px; color: green; 
+                cursor: pointer; 
+                display: inline-block; 
+                padding: 7px 20px; 
+                text-align: center; 
+                text-decoration: none; 
+                transition: all 250ms; 
+                border: 0; 
+                font-size: 19px; 
+                user-select: none; 
+                -webkit-user-select: none; 
+                touch-action: manipulation; 
+                font-weight: 700;
+                height: 45px;
+            } 
+            #first-button:hover { 
+                box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px; 
+                transform: scale(1.05) rotate(-1deg); }
+
+
+
+
+
+
+
+
+
+
+            .second-button { 
+                align-items: center; 
+                background-color: #fee6e3; 
+                border: 2px solid #111; 
+                border-radius: 8px; 
+                box-sizing: border-box; 
+                color: #111; 
+                cursor: pointer; 
+                display: flex; 
+                font-size: 16px; 
+                height: 45px; 
+                justify-content: center; 
+                line-height: 24px; 
+                max-width: 100%; 
+                padding: 0 25px; 
+                position: relative; 
+                text-align: center; 
+                text-decoration: none; 
+                user-select: none; 
+                -webkit-user-select: none; 
+                touch-action: manipulation; 
+                font-weight: 700;
+            } 
+            .second-button:after { 
+                background-color: #111; 
+                border-radius: 8px; 
+                content: ""; 
+                display: block; 
+                height: 48px; 
+                left: 0; 
+                width: 100%; 
+                position: absolute; 
+                top: -2px; 
+                transform: translate(8px, 8px); 
+                transition: transform .2s ease-out; z-index: -1; 
+            } 
+            .second-button:hover:after { 
+                transform: translate(0, 0); 
+            } 
+            .second-button:active { 
+                background-color: #ffdeda; 
+                outline: 0; 
+            } .second-button:hover { 
+                outline: 0; 
+            } 
+            @media (min-width: 768px) { .second-button { padding: 0 40px; } 
+               }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+            .third-button, .third-button:after { 
+                width: 150px; 
+                height: 76px; 
+                line-height: 78px; 
+                font-size: 20px; 
+                background: linear-gradient(45deg, transparent 5%, #FF013C 5%); 
+                border: 0; 
+                color: #fff; 
+                letter-spacing: 3px; 
+                box-shadow: 6px 0px 0px #00E6F6; 
+                outline: transparent; 
+                position: relative; 
+                user-select: none; 
+                -webkit-user-select: none; 
+                touch-action: manipulation; 
+            } 
+            .third-button:after { 
+                --slice-0: inset(50% 50% 50% 50%); 
+                --slice-1: inset(80% -6px 0 0); 
+                --slice-2: inset(50% -6px 30% 0); 
+                --slice-3: inset(10% -6px 85% 0); 
+                --slice-4: inset(40% -6px 43% 0); 
+                --slice-5: inset(80% -6px 5% 0); 
+                content: 'ALTERNATE TEXT'; 
+                display: block; 
+                position: absolute; 
+                top: 0; left: 0; right: 0; bottom: 0; 
+                background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%); 
+                text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6; 
+                clip-path: var(--slice-0); 
+            } 
+            .third-button:hover:after { 
+                animation: 1s glitch; 
+                animation-timing-function: steps(2, end); 
+            } 
+            @keyframes glitch { 
+                0% { clip-path: var(--slice-1); 
+                    transform: translate(-20px, -10px); 
+                } 
+                10% 
+                { clip-path: var(--slice-3); 
+                    transform: translate(10px, 10px); 
+                } 
+                20% 
+                { clip-path: var(--slice-1); 
+                    transform: translate(-10px, 10px); 
+                }
+                 30% 
+                 { clip-path: var(--slice-3); 
+                    transform: translate(0px, 5px); 
+                } 
+                40% 
+                { clip-path: var(--slice-2); 
+                    transform: translate(-5px, 0px); 
+                } 
+                50% 
+                { clip-path: var(--slice-3); 
+                    transform: translate(5px, 0px); 
+                }
+                     60% 
+                     { clip-path: var(--slice-4); 
+                        transform: translate(5px, 10px); 
+                    } 
+                    70% 
+                    { clip-path: var(--slice-2); 
+                        transform: translate(-10px, 10px); 
+                    } 
+                    80%
+                     { clip-path: var(--slice-5); 
+                        transform: translate(20px, -10px); 
+                    }
+                     90%
+                      { clip-path: var(--slice-1); 
+                        transform: translate(-10px, 0px);
+                     } 
+                     100%
+                      { clip-path: var(--slice-1); 
+                        transform: translate(0); 
+                    } 
+                } 
+                @media (min-width: 768px) 
+                { .third-button, .third-button:after { 
+                    width: 200px; 
+                    height: 86px; 
+                    line-height: 88px; 
+                } 
+            }
+
+
+
+
+
+
+
+
+.fourth-button {
+  color: #FFF;
+  transition: all 0.3s;
+  position: relative;
+}
+.fourth-button span {
+  transition: all 0.3s;
+}
+.fourth-button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+.fourth-button:hover span {
+  letter-spacing: 2px;
+}
+.fourth-button:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.fourth-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+.fourth-button:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}
+
+
+            #container{
+                display: flex;
+            }
+
+            .divs{
+                margin-left: 6.5cm;
+            }
+
+    </style>
+</head>
+<body>
+    <h1 id="heading1" >Welcome To My Assignment's Page.</h1>
+
+        <p  title="Congratz! You Found A Secret Text!" id="under-heading"> <b><u>You Can Visit My Assignments Through This Page!.</u></b></p>
+<br>
+<br>
+<div id="container">
+    <div class="divs">
+        <button id="first-button">Second Assignment.</button>
+    </div>
+        
+    <div class="divs">
+        <button class="second-button" role="button">Third Assignment.</button>
+    </div>
+        
+    <div class="divs">
+        <button class="third-button" role="button">FourthAssignment</button>
+    </div>
+    <div class="divs">
+    
+      </div>
+    </div>
+</div>
+
+</body>
+</html>
