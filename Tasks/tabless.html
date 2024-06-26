@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .backcolor{
+            background-color: rgb(82, 255, 47);
+        }
+
+        #colt{
+            color: darkblue;
+            font-weight: 900;
+}
+
+
+        body{
+            background-color: cornflowerblue;
+        }
+
+        h1{
+            text-shadow:
+            0 0 10px #fff, 
+            0 0 20px #fff, 
+            0 0 42px #0fa, 
+            0 0 82px #0fa,
+            0 0 92px #0fa;
+	    color: white;
+	    font-size: 30px;
+	    text-align: center;	  	
+            text-decoration: underline;
+            text-decoration-color: rgb(43, 12, 221);
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+    <h1>First Table:</h1>
+    </center>
+
+    <h1>Nested Tables:</h1>
+    <br>
+
+<center>
+    <div class="backcolor" id="colt">
+    <table border="1">
+        <tr>
+            <th>Header Column 1</th>
+            <th>Header Column 2</th>
+            <th>Header Column 3</th>
+            <th>Header Column 4</th>
+        </tr>
+
+
+        <tr>
+            <td>Row 2 - Item 1</td>
+            <td>Row 2 - Item 2</td>
+
+            <td rowspan="2"> 
+                <b> Row 2:Nested Table 1 </b> 
+                
+<br>
+<br>
+                <table border="1">
+                    <tr> <td>Row 1 Header</td> <td>item</td> </tr>
+                    <tr> <td>Row 2 Header</td> <td>item</td> </tr>
+                    <tr> <td>Row 3 Header</td> <td>item</td> </tr>
+                </table>
+            </td>
+
+            <td> Row 2 - Item 4
+                <br>
+                A Second Line
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                 <b> Row 3: Nested Table 2 </b> 
+                 <br>
+                 <br>
+
+                 <table border="1">
+                    <tr> <td >Row 1 Header </td> <td>item</td> </tr>
+                    <tr> <td >Row 2 Header </td> <td>item</td> </tr>
+                 </table>
+            
+            </td>
+
+
+            <td>Row 3 - Item 2</td>
+            <td rowspan="2"> Row 3 - Item 3</td>
+        </tr>
+
+
+        <tr>
+            <td>Row 4 - Item 1</td>
+            <td> Row 4 - Item 2</td>
+            <td> Row 4 - Item 3</td>
+        </tr>
+
+
+        <tr>
+            <td colspan="4">Row 5 - Last Row Of Outer Table</td>
+        </tr>
+    </table>
+</div>
+</center>
+
+<br>
+<br>
+    <h1>Second Table:</h1>
+    <br>
+
+    <center>
+        <div class="backcolor" id="colt">
+    <table border="1" style="text-align: center;">
+        
+        <caption>Marksheet Of 2077</caption>
+
+        <tr>
+            <td class="colt" rowspan="4">S.no</td>
+            <td rowspan="4">Name</td>
+            <td colspan="6">Subject</td>
+            <td rowspan="4">Total</td>
+        </tr>
+
+        <tr class="colt">
+            <td colspan="2">Science</td>
+            <td colspan="2">Social</td>
+            <td colspan="2">Computer</td>
+        </tr>
+
+        <tr>
+            <td colspan="6">Marks</td>
+        </tr>
+
+        <tr>
+            <td>Internal</td>
+            <td>Final</td>
+            <td>Internal</td>
+            <td>Final</td>
+            <td>Internal</td>
+            <td>Final</td>
+        </tr>
+
+        <tr>
+            <td>1.</td>
+            <td>Bikash</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td>2.</td>
+            <td>Bikesh</td>
+            <td>11</td>
+            <td>13</td>
+            <td>44</td>
+            <td>45</td>
+            <td>46</td>
+            <td>47</td>
+            <td>51</td>
+        </tr>
+
+        <tr>
+            <td>3.</td>
+            <td>Ahmed</td>
+            <td>12</td>
+            <td>14</td>
+            <td>45</td>
+            <td>46</td>
+            <td>47</td>
+            <td>48</td>
+            <td>52</td>
+        </tr>
+
+        <tr>
+            <td>4.</td>
+            <td>Hasan</td>
+            <td>13</td>
+            <td>15</td>
+            <td>46</td>
+            <td>47</td>
+            <td>48</td>
+            <td>49</td>
+            <td>53</td>
+        </tr>
+
+        <tr>
+            <td>5.</td>
+            <td>Dior</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+
+
+
+
+
+    
+    </table>
+</div>
+</center>
+<br>
+<br>
+<br>
+    <h1>Third Table:</h1>
+    <br>
+    <br>
+    <center>
+<div class="backcolor" id="colt">
+    
+<table border="1">
+    <caption>Athletics Day Time Table</caption>
+
+    <tr>
+        <th>Area</th>
+        <th>10am-11am</th>
+        <th>11am-12pm</th>
+        <th>12pm-1pm</th>
+        <th>1pm-2pm</th>
+        <th>2pm-3pm</th>
+    </tr>
+
+    <tr>
+        <th rowspan="2">Track</th>
+        <td>400m</td>
+        <td>200m</td>
+        <th rowspan="3">Lunch</th>
+        <td>800m</td>
+        <td>100m</td>
+    </tr>
+
+    <tr>
+        <td>Hurdles</td>
+        <td>1500m</td>
+        <td>Free</td>
+        <td>80m</td>
+    </tr>
+
+    <tr>
+        <th>Field</th>
+        <td>Discuss</td>
+        <td>Javelin</td>
+        <td>Shot Put</td>
+        <td>Hammer Throw</td>
+    </tr>
+
+
+</table>
+</div>
+</center>
+
+</body>
+</html>
